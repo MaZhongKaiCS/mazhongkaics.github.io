@@ -6,8 +6,8 @@ module.exports = {
     head: [
         ["link", { rel: "icon", href: "/avatar.png" }],
         ["meta", { name: "twitter:card", content: "summary_large_image" }],
-        ["meta", { name: "twitter:site", conetent: "KORILIN" }],
-        ["meta", { name: "twitter:creator", conetent: "@Kori_Lin" }],
+        ["meta", { name: "twitter:site", conetent: "RAY" }],
+        ["meta", { name: "twitter:creator", conetent: "@MaZhongKaiCS" }],
     ],
     themeConfig: {
         startTime: 2020,
