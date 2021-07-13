@@ -1,0 +1,229 @@
+
+.change-enter-active {
+    transition all 0.3s ease
+}
+
+.change-leave-active {
+    transition all 0.3s ease
+}
+
+.change-enter {
+    transform translate(-20px)
+    opacity 0
+}
+
+.change-leave-to {
+    transform translateY(20px)
+    opacity 0
+}
+
+.show-enter-active {
+    transition all 0.3s ease
+}
+
+.show-leave-active {
+    transition all 0.3s ease
+}
+
+.show-enter {
+    transform translate(-20px)
+    opacity 0
+}
+
+.show-leave-to {
+    transform translateX(20px)
+    opacity 0
+}
+
+::-webkit-scrollbar {
+    width 10px
+    height 10px
+    background-color #ebeef0
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius 10px
+    background-color color-blue-opacity
+}
+
+.search-box {
+    .suggestions {
+        left -67px !important
+        z-index 10
+    }
+
+    @media screen and (max-width 1010px) {
+        text-align left
+
+        input {
+            left 0 !important
+        }
+
+        .suggestions {
+            position fixed !important
+            top 48px !important
+            left calc(11vw - 5px) !important
+            width 78vw !important
+        }
+    }
+}
+
+.content__default, .excerpt {
+    line-height 1.65
+    font-size 15px
+    word-wrap break-word
+
+    a {
+        text-decoration none
+        color color-blue
+    }
+
+    em {
+        color minor-font-color
+    }
+
+    .header-anchor {
+        display none
+    }
+
+    img {
+        width 100%
+    }
+
+    blockquote {
+        border-left 3px solid color-blue
+        margin 0
+        padding 2px 10px
+
+        p {
+            margin 0
+        }
+    }
+
+    code {
+        font-family CascadiaCode
+        background color-blue-opacity
+        padding 2px 6px
+        border-radius 4px
+        font-size 14px
+        margin 0 5px
+    }
+
+    pre {
+        box-shadow 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+        border 1px solid #ebeef5
+        padding 20px
+        margin 25px 0
+        border-radius 10px
+        overflow auto
+        position relative
+
+        code {
+            background none
+            padding 0
+            font-family CascadiaCode
+            background none
+            line-height 2
+            font-size 13px
+            margin 0
+
+            .hljs-built_in {
+                color #42a4d6
+            }
+
+            .keyword {
+                color #a724b7
+            }
+
+            .function {
+                color #e24279
+            }
+
+            .class-name {
+                color #e24279
+            }
+
+            .title, .type {
+                color #4394d8
+            }
+
+            .tag {
+                color #ea2828
+
+                .punctuation {
+                    color #43d1f1
+                }
+
+                .attr-name {
+                    color #a724b7
+                }
+
+                .attr-value {
+                    color #0fad64
+                }
+            }
+
+            .operator {
+                color #2379d2
+            }
+
+            .number, .literal {
+                color #FF9800
+            }
+
+            .doctag, .string {
+                color #009688
+            }
+
+            .comment, .quote {
+                color #9E9E9E
+            }
+
+            .attribute, .name {
+                color red
+            }
+
+            .attr {
+                color #525252
+            }
+        }
+    }
+
+    table {
+        overflow auto
+        display block
+
+        tr {
+            th {
+                padding 8px 15px
+                color th-font
+
+                &:nth-child(2n) {
+                    background th-color-dual
+                }
+
+                &:nth-child(2n-1) {
+                    background th-color-sing
+                }
+            }
+
+            td {
+                padding 8px 15px
+
+                &:nth-child(2n) {
+                    background td-color-dual
+                }
+
+                &:nth-child(2n-1) {
+                    background td-color-sing
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                border-top 2px solid white
+            }
+        }
+    }
+}
